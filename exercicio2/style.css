@@ -1,0 +1,7 @@
+
+.conta,.endereço,.perfil,.email {
+  border-style: groove;
+  padding: 30px;
+  margin-bottom: 1px;
+  margin-top: 1px;
+}
