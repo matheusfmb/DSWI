@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+  }
+  
+header {
+    background-color: #669dc2;
+    padding: 20px;
+    text-align: center;
+  }
+  
+.navbar {
+    justify-content: center;
+    display: flex;
+  }
+
+.navbar button {
+    color: #070707;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    font: inherit;
+  }
+  
+.navbar button:hover {
+    color: #18f0ff;
+  }
+  
+  
+main {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.box {
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+.box-produtos{
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    flex-basis: calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    width: 300px;
+}
+
+@media (max-width: 768px) {
+    .box-produtos {
+      flex-basis: calc(50% - 20px);
+      max-width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .box-produtos {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+  }
+
+.produtos-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+.box-produtos img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+  
+.box img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  
+footer {
+    margin-top: auto;
+    background-color: #669dc2;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+  }
