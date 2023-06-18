@@ -22,7 +22,24 @@
                 </ul>
             </nav>
         </header>
-        <main class="conteudo">
+        <main class="conteudo-agen" style="background-image:url(assets/8817a42685fdf0289e0f0aa87fde6b35.jpg)">
+            <div class="conteudo-agendamento">
+                <form>
+                    <h1>Contato</h1>
+                    <p>Faça contato conosco! seja para tirar dúvidas ou avaliar nosso atendimento</p>
+                    <div class="form-group">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="phone">Telefone:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                        <label for="notes">Observações:</label>
+                        <textarea id="notes" name="notes" rows="10"></textarea>
+                        <input id="btn-contato" type="submit" class="submit-agendamento" value="Enviar" onclick="limparCampos()">
+                    </div> 
+                </form>
+            </div>
         </main>
         <footer class="footer">
             <p>&copy; 2023 Fit Barber. Todos os direitos reservados.</p>

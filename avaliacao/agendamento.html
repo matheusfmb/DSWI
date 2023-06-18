@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
     <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
     <title>Fit - Barber</title>
 </head>
 <body>
@@ -22,7 +25,27 @@
                 </ul>
             </nav>
         </header>
-        <main class="conteudo">
+        <main class="conteudo-agen" style="background-image:url(assets/8817a42685fdf0289e0f0aa87fde6b35.jpg)">
+            <div class="conteudo-agendamento">
+                <form>
+                    <h1>Agendamento</h1>
+                    <div class="form-group">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="phone">Telefone:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                        <label for="date">Data:</label>
+                        <input type="date" id="date" name="date" required>
+                        <label for="time">Hora:</label>
+                        <input type="time" id="time" name="time" required>
+                        <label for="notes">Observações adicionais:</label>
+                        <textarea id="notes" name="notes" rows="5"></textarea>
+                        <input id="btn-agendamento" type="submit" class="submit-agendamento" value="Enviar" onclick="limparCampos()">
+                    </div> 
+                </form>
+            </div>
         </main>
         <footer class="footer">
             <p>&copy; 2023 Fit Barber. Todos os direitos reservados.</p>
@@ -31,6 +54,5 @@
         </footer>
     </div>
     <script src="https://kit.fontawesome.com/b88bdd215f.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
 </body>
 </html>

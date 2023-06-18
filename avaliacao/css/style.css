@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
-body {
+* {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
 .wrapper {
@@ -17,7 +18,7 @@ body {
     color: #000000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     align-items: center;
-    position: fixed;
+    position: sticky;
     width: 100%;
 }
 
@@ -28,13 +29,10 @@ body {
 .navbar-logo:hover {
     transform: scale(1.2); 
     color: orange;
-   
   }
 
 .navbar ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,6 +56,7 @@ body {
     font-size: 21px;
 }
 
+
 @media (max-width: 768px) {
   .navbar ul {
     flex-direction:column;
@@ -69,9 +68,6 @@ body {
 
 }
 
-.navbar-logo :hover{
-    width: 200px;
-}
 
 .navbar ul {
     flex-basis: auto;
@@ -80,7 +76,7 @@ body {
 }
 
 .footer {
-    background-color: #f5f5f5;
+    background-color: white;
     color: #666666;
     text-align: center;
     display: flex;
@@ -90,13 +86,15 @@ body {
     flex-shrink: 0;
 }
 
-.conteudo{
-    flex: 1;
-    padding-top: 160px;
-}
+
 /* FIM HEADER E FOOTER */
 
 /* INÍCIO HOME - HTML */
+.conteudo{
+    flex: 1;
+    background-color: whitesmoke;
+}
+
 .conteudo-home {
     align-items: center;
     display: flex;
@@ -104,9 +102,111 @@ body {
     justify-content: center;
 }
 
+@media screen and (max-width: 768px) {
+    .conteudo-home {
+      flex-direction: column;
+    }
+}
+
 .text-content-home {
-    width: 430px;
+    width: 470px;
+    margin-left: 400px;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.logradouro {
+    color:darkgoldenrod;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.text-content-home {
+    width: 470px;
     margin-left: 400px;
     font-size: 20px;
 }
 
+.text-content-home button {
+    background-color: ORANGE;
+    padding: 10px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.text-content-home button:hover{
+    background-color: rgb(160, 108, 12);
+}
+
+/* INÍCIO AGENDAMENTO - HTML */
+.conteudo-agen{
+    flex: 1;
+    padding: 50px;
+    background-size:cover;
+}
+
+.conteudo-agendamento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo-agendamento img {
+    border-radius: 10%;
+}
+
+.conteudo-agendamento form{
+    width:  600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+
+.conteudo-agendamento h1,
+.conteudo-agendamento p{
+    text-align: center;
+    color: orange;
+    padding-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    opacity: 0;
+
+}
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: none;
+}
+
+.submit-agendamento {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: ORANGE;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-agendamento:hover {
+   background-color: rgb(160, 108, 12);
+}
