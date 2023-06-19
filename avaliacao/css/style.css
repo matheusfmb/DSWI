@@ -212,3 +212,40 @@
 .submit-agendamento:hover {
    background-color: rgb(160, 108, 12);
 }
+
+
+/* SOBRE */
+
+.conteudo-sobre{
+    flex: 1;
+    background-color: whitesmoke;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.sobre {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px;
+  }
+.historia-text{
+    margin-top: 20px;
+}
+.sobre h2{
+    margin-top: 60px;
+    color: orange;
+    font-size: 30px;
+}
+  
+.sobre  p {
+    font-size: 25px;
+    line-height: 1.5;
+    color: white;
+    text-shadow: 2px 2px black;
+  }
+  
+.sobre  img {
+    width: 200px;
+    height: auto;
+  }

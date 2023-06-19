@@ -1,17 +1,32 @@
 .conteudo-cort{
   flex: 1;
   background-color: whitesmoke;
-  /* background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; */
+  text-align: center;
 }
 
-.conteudo-cort h2{
+.conteudo-cort button {
+    text-align: center;
+    background-color: ORANGE;
+    padding: 10px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.conteudo-cort button:hover {
+  background-color: rgb(129, 92, 23);
+}
+
+.conteudo-cort h2{ 
   text-align: center;
   margin-top: 40px;
   color: orange;
   font-size: 25px;
 }
+
 .conteudo-cort p{
   text-align: center;
 
@@ -35,6 +50,9 @@
     box-shadow: 0px 0px 20px 3px  rgba(131, 131, 131, 0.705);
     font-size: 23px;
     font-weight: 200;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
   }
 
 .card p {
