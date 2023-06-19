@@ -14,7 +14,7 @@
 }
 
 .navbar {
-    background-color: #ffffff;
+    background-color: white;
     color: #000000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     align-items: center;
@@ -113,6 +113,7 @@
     margin-left: 400px;
     font-size: 20px;
     margin-top: 50px;
+    text-shadow: 2px 2px rgb(245, 242, 242);
 }
 
 .logradouro {
@@ -125,6 +126,7 @@
     width: 470px;
     margin-left: 400px;
     font-size: 20px;
+    color: black;
 }
 
 .text-content-home button {
@@ -140,7 +142,7 @@
     background-color: rgb(160, 108, 12);
 }
 
-/* INÍCIO AGENDAMENTO - HTML */
+/* INÍCIO AGENDAMENTO e CONTATO - HTML */
 .conteudo-agen{
     flex: 1;
     padding: 50px;
