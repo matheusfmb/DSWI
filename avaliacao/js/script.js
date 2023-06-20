@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
     // home - conteudo
+    if (window.innerWidth > 1000) {
     gsap.to(".img-home", {duration: 2, x: 180});
+    }
+
     gsap.to(".text-content-home", {duration: 2, x: -130});
     gsap.to(".form-group", { opacity: 1, duration: 1.5 });
 

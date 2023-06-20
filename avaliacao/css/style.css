@@ -57,7 +57,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .navbar ul {
     flex-direction:column;
     align-items: center;
@@ -92,6 +92,26 @@
 .conteudo{
     flex: 1;
     background-color: whitesmoke;
+    width: 100%;
+}
+
+.none{
+    display: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.none button{
+    background-color: ORANGE;
+    padding: 10px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .conteudo-home {
@@ -101,11 +121,27 @@
     justify-content: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     .conteudo-home {
       flex-direction: column;
     }
-}
+
+    .img-home{
+        display: none;
+    }
+    .text-content-home {
+        display: none;
+    }
+    .none{
+        display: block;
+    }
+    
+    .logradouro {
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+  }
+
 
 .text-content-home {
     width: 470px;
@@ -119,13 +155,6 @@
     color:darkgoldenrod;
     font-size: 16px;
     margin-top: 10px;
-}
-
-.text-content-home {
-    width: 470px;
-    margin-left: 400px;
-    font-size: 20px;
-    color: black;
 }
 
 .text-content-home button {
@@ -154,9 +183,6 @@
     justify-content: center;
 }
 
-.conteudo-agendamento img {
-    border-radius: 10%;
-}
 
 .conteudo-agendamento form{
     width:  600px;
