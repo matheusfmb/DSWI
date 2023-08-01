@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const date = document.getElementById("date").value;
         const time = document.getElementById("time").value;
         const notes = document.getElementById("notes").value;
-        if (name == "" && phone == "" && email == "" && date == "" && time == "" && notes == "") {
+        if (name == "" || phone == "" || email == "" || date == "" || time == "" || notes == "") {
             alert("Preencha todos os Campos");
         }else{
             alert("Agendamento Realizado");
